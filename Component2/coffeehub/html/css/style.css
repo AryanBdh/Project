@@ -1,48 +1,78 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@100&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
 
-.cover{
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../images/cover.jpg);
-   background-position: center;
-   background-size: cover;
-   width: 100%;
-   height: 100vh;
-   color: #fff;
-   position: fixed;
+.cover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/cover.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    position: fixed;
 }
 
 /*header*/
 
-header{
-    
+header {
+
     width: 100%;
-    height: 70px;
+    height: 50px;
     background-color: rgb(41, 30, 30);
     position: fixed;
     z-index: 3;
 }
 
 
-.container{
+.container {
     width: 95%;
     margin: auto;
 }
 
- .container .nav ul{
+.container .nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container .nav ul {
     display: flex;
     justify-content: space-between;
     width: 50%;
     padding-left: 30%;
     list-style: none;
-    padding-top: 20px;
+    padding-top: 15px;
+    margin-right: 60px;
 }
 
+.container .nav .signup-box{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(192, 136, 99);
+    margin-top: 10px;
+    margin-right: 120px;
+    border-radius: 5px;
+}
 
+.container .nav .signup-box h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding-top: 2px;
+    text-align: center;
+}
 
- .nav ul li a{
+.container .nav .signup-box h1 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav ul li a {
     text-decoration: none;
     font-family: sans-serif;
     color: #fff;
@@ -50,7 +80,7 @@ header{
     padding: 0px 20px;
 }
 
- /* .nav ul li a::after{
+/* .nav ul li a::after{
     content: '';
     height: 2px;
     width: 0%;
@@ -61,7 +91,7 @@ header{
     transition: 0.2s;
  } */
 
- .nav ul li a:hover{
+.nav ul li a:hover {
     width: 100%;
     text-align: center;
     border-bottom: 4px solid green;
@@ -72,14 +102,14 @@ header{
 /* Main */
 /*-section*/
 
-main{
+main {
     width: 100%;
     position: absolute;
     z-index: 2;
     margin-top: 90px;
 }
 
-.section .container1{
+.section .container1 {
     width: 80%;
     height: 600px;
     margin: auto;
@@ -90,7 +120,7 @@ main{
     border-radius: 20px;
 }
 
-.section .container1 .box p{
+.section .container1 .box p {
     font-family: 'Cuprum';
     font-style: normal;
     font-weight: 700;
@@ -101,7 +131,7 @@ main{
     padding-left: 50px;
 }
 
-article h1{
+article h1 {
     font-family: 'Cuprum';
     font-style: normal;
     font-weight: 200;
@@ -112,40 +142,43 @@ article h1{
     padding-top: 20px;
 }
 
-.container2{
+.container2 {
     width: 80%;
     height: 700px;
     margin: auto;
     background-color: rgb(65, 35, 35);
     border-radius: 20px;
-   
+
 }
 
-.container2 article img{
+.container2 article img {
     height: 600px;
     margin-left: 700px;
     margin-top: -450px;
 }
 
-.container2 .box1{
+.container2 .box1 {
     width: 59%;
     height: 400px;
     background-color: rgb(89, 62, 62);
     border-radius: 20px;
     margin-left: 50px;
     margin-top: 50px;
-    
+
+
 }
 
-.container2 .box1 p{
-    font-family: sans-serif;
+.container2 .box1 p {
+    font-family: 'Dancing Script', cursive;
     font-size: 25px;
-    text-align:justify;
+    text-align: justify;
+    padding-left: 53px;
     padding-top: 50px;
     color: #fff;
+    width: 600px;
 }
 
-.container2 .smallbox{
+.container2 .smallbox {
     width: 10%;
     height: 5%;
     background-color: rgb(129, 101, 101);
@@ -154,7 +187,7 @@ article h1{
     margin-top: -120px;
 }
 
-.container2 .smallbox h1{
+.container2 .smallbox h1 {
     font-family: sans-serif;
     font-size: 20px;
     text-align: center;
@@ -162,14 +195,15 @@ article h1{
     padding-top: 5px;
 }
 
-.container2 .smallbox h1 a{
+.container2 .smallbox h1 a {
     text-decoration: none;
     color: #fff;
 }
+
 /*-section-end*/
 
 
-.section1 .container3{
+.section1 .container3 {
     width: 100%;
     height: 600px;
     margin: auto;
@@ -186,14 +220,14 @@ article h1{
     margin-top: 100px;
 }
 
-.section1 .container3 .box2{
+.section1 .container3 .box2 {
     width: 80%;
     height: 400px;
     margin: auto;
     margin-top: 50px;
 }
 
-.section1 .container3 .box2 p{
+.section1 .container3 .box2 p {
     color: rgb(66, 37, 37);
     font-size: 150px;
     padding-top: 300px;
@@ -201,39 +235,103 @@ article h1{
     font-weight: 900;
 }
 
-.section1 .container3 .box2 p1{
+.section1 .container3 .box2 p1 {
     font-size: 30px;
     padding-left: 470px;
     color: rgb(175, 134, 134);
 }
 
-.section1 .container3 .box2 p2{
+.section1 .container3 .box2 p2 {
     font-size: 40px;
     padding-left: 430px;
 }
 
-.section1 .container3 .box2 p2 a{
+.section1 .container3 .box2 p2 a {
     text-decoration: none;
     color: rgb(67, 176, 176);
 }
 
-.section1 .container4{
+.section1 .container4 {
     width: 100%;
-    height: 800px;
+    height: 900px;
     background-color: rgb(250, 228, 193);
 }
 
-.section1 .container4 .box3{
+.section1 .container4 .smallbox1 {
     width: 400px;
     padding-left: 560px;
     padding-top: 50px;
+
 }
-.section1 .container4 .box3 h1{
+
+.section1 .container4 .smallbox1 h1 {
     font-family: sans-serif;
     font-size: 45px;
     color: rgb(77, 46, 46);
     text-align: center;
-    padding-top: 20px;
+    justify-content: center;
     font-weight: 300;
+    border-left: 4px solid rgb(173, 134, 134);
+}
+
+.section1 .container4 .box3 {
+    width: 95%;
+    height: 700px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    margin-top: 40px;
+    box-shadow: 0px 0px 70px rgb(161, 160, 160);
+}
+
+main .signinbox{
+    width: 40%;
+    margin: auto;
+    height: 600px;
+    background-color:rgb(250, 228, 193);
+    border-radius: 20px;
+}
+
+main .signinbox h1{
+    margin-left: 20px;
+    padding-top: 20px;
+    font-family: 'Roboto' sans-serif;
+    font-size: 40px;
+}
+
+main .signinbox p{
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 7px;
+    color: rgb(98, 98, 98);
+    font-family: 'Roboto' sans-serif;
+}
+
+main .signinbox hr{
+    margin-top: 7px;
+}
+
+.form-group{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.form-group .form-control{
+    width: 47%;
+    height: 30px;
+    border-radius: 5px;
+    border-style:none;
+}
+
+.form-group1{
+    width: 100%;
+    height: 50px;
+   
+}
+
+.form-group1 .form-control1{
+    width: 90%;
+    margin-left: 20px;
 }
 /* main-end */
