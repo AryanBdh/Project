@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@100&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -302,7 +304,15 @@ article h1 {
     background-color: rgb(250, 228, 193);
     margin-top: 25px;
     margin-left: 30px;
+    position: relative;
 
+}
+.section1 .container4 .box3 .rec .circle i{
+    position: absolute;
+    top: 30%;
+    left: 27%;
+    color: rgb(0, 0, 0);
+   font-size: 80px;
 }
 
 .section1 .container5 {
@@ -419,6 +429,144 @@ article h1 {
     background-color: rgb(255, 255, 255);
     margin-top: 40px;
     box-shadow: 0px 0px 50px rgb(161, 160, 160);
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1 .container6 .box5 .sidebox{
+    width: 700px;
+    height: 500px;
+    background-color: #644545;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.section1 .container6 .box5 .sidebox form input{
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    width: 90%;
+    border: 1px solid #999;
+    margin-left: 15px;
+}
+
+.section1 .container6 .box5 .sidebox1 {
+    width: 500px;
+    height: 500px;
+    margin-top: 100px;
+    background-color: #644545;
+    margin-right: 30px;
+    padding-left: 150px;
+}
+
+.menucontainer{
+    width: 80%;
+    height: 2750px;
+    background-color: rgb(250, 228, 193);
+    margin: auto;
+    border-radius: 20px;
+    border: 1px solid #999;
+}
+
+.menucontainer h1{
+    font-family: sans-serif;
+    color: rgb(77, 46, 46);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+   
+}
+
+.menubox{
+    width: 90%;
+    height:1460px ;
+    background-color: aliceblue;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px rgb(161, 160, 160);
+    border-radius: 20px;
+}
+
+.menubox p{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Leckerli One', cursive;
+    color: rgb(77, 46, 46);
+}
+
+.coffeeitem{
+    width: 90%;
+    height: 1350px;
+    background-color: antiquewhite;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.coffee1{
+    width: 300px;
+    height: 400px;
+    background-color: #473224;
+    margin-top: 50px;
+    
+}
+
+.coffee2{
+    width: 300px;
+    height: 400px;
+    background-color: #cb6e30;
+    padding-top: -280px;
+}
+
+.coffee3{
+    width: 300px;
+    height: 400px;
+    background-color: #d5a687;
+    padding-top: -280px;
+}
+
+.menubox1{
+    width: 90%;
+    height:1050px ;
+    background-color: aliceblue;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px rgb(161, 160, 160);
+    border-radius: 20px;
+}
+
+.menubox1 p{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Leckerli One', cursive;
+    color: rgb(77, 46, 46);
+}
+
+.coffeeitem1{
+    width: 90%;
+    height: 950px;
+    background-color: antiquewhite;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.coffee4{
+    width: 300px;
+    height: 400px;
+    background-color: #473224;
+    margin-top: 50px;
+    
+}
+
+.coffee5{
+    width: 300px;
+    height: 400px;
+    background-color: #cb6e30;
+    padding-top: -280px;
 }
 
 /*signin*/
@@ -436,6 +584,7 @@ main .signinbox h1 {
     padding-top: 20px;
     font-family: 'Roboto' sans-serif;
     font-size: 40px;
+    border-left: 2px solid red;
 }
 
 main .signinbox p {
