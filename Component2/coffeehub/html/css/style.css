@@ -9,12 +9,18 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+body{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
 
 .cover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/cover.jpg);
     background-position: center;
     background-size: cover;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     color: #fff;
     position: fixed;
@@ -26,7 +32,7 @@ header {
 
     width: 100%;
     height: 50px;
-    background-color: #473224;
+    background-color: #422e21;
     position: fixed;
     z-index: 3;
 }
@@ -128,8 +134,8 @@ main {
     font-weight: 700;
     font-size: 75px;
     color: #ffffff;
-    padding-top: 180px;
-    width: 50%;
+    padding-top: 142px;
+    width: 45%;
     padding-left: 50px;
 }
 
@@ -155,17 +161,18 @@ article h1 {
 
 .container2 article img {
     height: 600px;
-    margin-left: 700px;
-    margin-top: -450px;
+    margin-left: 730px;
+    margin-top: -586px;
 }
 
 .container2 .box1 {
     width: 59%;
-    height: 400px;
+    /* height: 400px; */
     background-color: rgb(89, 62, 62);
     border-radius: 20px;
     margin-left: 50px;
     margin-top: 50px;
+    padding: 40px;
 
 
 }
@@ -174,27 +181,18 @@ article h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 25px;
     text-align: justify;
-    padding-left: 53px;
-    padding-top: 50px;
     color: #fff;
-    width: 600px;
 }
 
-.container2 .smallbox {
-    width: 10%;
-    height: 5%;
-    background-color: rgb(129, 101, 101);
-    border-radius: 15px;
-    margin-left: 650px;
-    margin-top: -120px;
-}
 
-.container2 .smallbox h1 {
+.container2 .btn {
     font-family: sans-serif;
     font-size: 20px;
     text-align: center;
     color: white;
-    padding-top: 5px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
 }
 
 .container2 .smallbox h1 a {
@@ -360,12 +358,18 @@ article h1 {
     text-align: center;
     text-decoration: none;
     font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.section .container5 .more h1 a{
-    color: #fff;
-    font-size: 10px;
+#More1{
+    color: white;
     text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 400;
+    font-family: sans-serif;
 }
 
 .section1 .container5 .box4 .rec1 {
@@ -374,6 +378,8 @@ article h1 {
     background-color: rgb(94, 67, 67);
     margin-left: 3px;
     margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .section1 .container5 .box4 .rec1 .circle1 {
@@ -386,6 +392,11 @@ article h1 {
 
 }
 
+.smallrec{
+    display: flex;
+    gap: 150px;
+    color: #fff;
+}
 .section1 .container5 .box4 .rec1 .circle1 img {
     width: 200px;
     height: 200px;
@@ -409,17 +420,28 @@ article h1 {
 .section1 .container6 .smallbox3 {
     width: 400px;
     margin-left: 560px;
-    padding-top: 50px;
+    padding-top: 1px;
 }
 
 .section1 .container6 .smallbox3 h1 {
     font-family: sans-serif;
     font-size: 45px;
     color: rgb(77, 46, 46);
-    text-align: center;
-    justify-content: center;
+    /* text-align: center; */
+    /* justify-content: center; */
     font-weight: 700;
+    
+
+}
+#review{
+    display: flex;
+    justify-content: center;
+}
+#h1smthing{
     border-left: 4px solid rgb(173, 134, 134);
+    /* width: 200px; */
+    padding: 0 10px 0;
+    display: inline-block;
 }
 
 .section1 .container6 .box5 {
@@ -448,6 +470,39 @@ article h1 {
     width: 90%;
     border: 1px solid #999;
     margin-left: 15px;
+}
+
+.section1 .container6 .box5 .sidebox form textarea{
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    width: 90%;
+    border: 1px solid #999;
+    margin-left: 15px;
+    height: 170px;
+    font-family: sans-serif;
+}
+
+textarea::placeholder{
+    padding-left: 10px;
+}
+
+.sidebox button{
+    height: 40px;
+    width: 80px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(76, 228, 76);
+    border-style: none;
+    color: white;
+    text-align: center;
+    float: right;
+    margin-right: 13px;
+}
+
+.sidebox button:hover{
+    background-color: #ac5114;
 }
 
 .section1 .container6 .box5 .sidebox1 {
@@ -498,7 +553,6 @@ article h1 {
 .coffeeitem{
     width: 90%;
     height: 1350px;
-    background-color: antiquewhite;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -509,21 +563,88 @@ article h1 {
     height: 400px;
     background-color: #473224;
     margin-top: 50px;
-    
+    border: 2px solid black;
+    text-align: center;
 }
 
 .coffee2{
     width: 300px;
     height: 400px;
-    background-color: #cb6e30;
+    background-color: #473224;
     padding-top: -280px;
+    border: 2px solid black;
+    text-align: center;
+
+}
+
+.coffeeitem .img{
+width: 300px;
+margin: auto;
+height: 278px;
+}
+
+.coffeeitem hr{
+    background-color: #fff;
+}
+
+.coffee1 p{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.coffee2 p{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.coffee3 p{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.coffeeitem p1{
+    font-family: 'Leckerli One', cursive;
+    color: #fff; 
+    font-size: 20px;
+}
+
+.coffeeitem1 hr{
+    background-color: #fff;
+}
+
+.coffeeitem1 p1{
+    font-family: 'Leckerli One', cursive;
+    color: #fff; 
+    font-size: 20px;
+}
+
+.coffeeitem1 .coffee4 p{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+.coffeeitem1 .coffee5 p{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.coffeeitem1 .img1{
+    width: 300px;
+margin: auto;
+height: 278px;
 }
 
 .coffee3{
     width: 300px;
     height: 400px;
-    background-color: #d5a687;
+    background-color: #473224;
     padding-top: -280px;
+    border: 2px solid black;
+    text-align: center;
 }
 
 .menubox1{
@@ -547,7 +668,6 @@ article h1 {
 .coffeeitem1{
     width: 90%;
     height: 950px;
-    background-color: antiquewhite;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -559,14 +679,18 @@ article h1 {
     height: 400px;
     background-color: #473224;
     margin-top: 50px;
+    border: 2px solid black;
+    text-align: center;
     
 }
 
 .coffee5{
     width: 300px;
     height: 400px;
-    background-color: #cb6e30;
+    background-color: #473224;
     padding-top: -280px;
+    border: 2px solid black;
+    text-align: center;
 }
 
 /*signin*/
@@ -634,9 +758,9 @@ main hr {
     margin-bottom: 10px;
 }
 
-/* main .form-group form input{ */
-/* padding-left: 20px;
-} */
+ main .form-group form input{ 
+padding-left: 20px;
+} 
 
 input::placeholder {
     padding-left: 15px;
@@ -702,9 +826,9 @@ main .signinbox .form-group3 p {
 }
 
 .signinbox .signbox {
-    /* width: 110px;
-    height: 50px; */
-    /* margin-left: 170px; */
+     width: 110px;
+    height: 50px; 
+     margin-left: 170px; 
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -734,8 +858,32 @@ main .signinbox .form-group3 p {
 
 footer .container7 {
     width: 100%;
-    height: 900px;
-    background-color: rgb(250, 228, 193);
-    margin-top: 50px;
+    height: 300px;
+    background-color: rgb(47, 28, 28);
+    
 }
 /* footer-end  */
+
+@media screen and (max-width: 767px) {
+    
+
+    /* main{
+        display: none;
+    } */
+    .section{
+        width: 100%;
+    }
+    .section .container1 .box p {
+        font-size: 90px;
+        width: 50%;
+    }
+    .container2 .box1 p {
+        font-size: 35px;
+    }
+    .container2 .btn {
+        font-size: 50px;
+        padding: 5px;
+    }
+    
+    
+}
